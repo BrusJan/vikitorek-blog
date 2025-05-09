@@ -1,16 +1,42 @@
 ---
-title: "First post"
-description: "Lorem ipsum dolor sit amet"
-pubDate: "Jul 08 2022"
-heroImage: "/blog-placeholder-3.jpg"
+title: "Unlimited tier disabled for the moment"
+description: "Reasoning behind disabled unlimited tier"
+pubDate: "May 07 2025"
+heroImage: "/Vikitorek_blog1.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+### 🚀 Vikitorek Beta Launch: Free Tier only
+We’re excited to announce the beta launch of Vikitorek — an app designed to help parents and teachers explain complex topics to children using simplified summaries of Wikipedia articles.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+### 🧒 What is Vikitorek?
+Vikitorek lets registered users enter search queries, finds the relevant article on Wikipedia, and returns a kid-friendly, one-paragraph summary that’s easier for children to understand.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+It’s a small tool with a big mission: making knowledge more accessible for young minds.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+### 🆓 Free Tier = 10 Queries
+Right now, Vikitorek is in beta and available on a free tier, which allows each registered user to enter up to 10 queries.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+We want to keep the app reliable and sustainable while we test its functionality and gather feedback.
+
+### 💡 Why No Unlimited Tier (Yet)?
+We understand that some users would love to use Vikitorek more extensively. However, we have not enabled the unlimited tier yet for two key reasons:
+
+Beta Stability – The app is still being tested, and we’re fine-tuning its performance. Enabling unlimited access too early might cause downtime or interruptions.
+
+Free Infrastructure Limits – Vikitorek currently runs on the free tiers of the Mistral API and Render.com, which means our backend and language model capacity are limited.
+
+We want to make sure everything runs smoothly before opening the gates to heavier usage.
+
+### 🛠️ What’s Next?
+We’re working on:
+
+- Improving reliability
+- Preparing for paid infrastructure
+- Unlimited subscription tier for power users (for 9$ monthly)
+### Planned features
+- Reporting incorrect answers
+- Making sure to answer correctly even when Wikipedia does not have an answer
+
+**Thanks for trying out Vikitorek during this early stage! We appreciate your patience as we continue building it out.**
+
+**Have feedback or ideas? Let us know—we’re listening: info@vikitorek.com**
