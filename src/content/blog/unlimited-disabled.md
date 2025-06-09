@@ -2,7 +2,7 @@
 title: "Unlimited tier disabled for the moment"
 description: "Reasoning behind disabled unlimited tier"
 pubDate: "May 08 2025"
-heroImage: "/Vikitorek_blog1.jpg"
+heroImage: "/unlimited-disabled.png"
 author: "Jan Brus"
 ---
 
