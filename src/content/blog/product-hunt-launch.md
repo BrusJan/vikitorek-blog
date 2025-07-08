@@ -13,7 +13,7 @@ June 27th, 2025 was a big day for Vikitorek — we officially launched on Produc
 ### 📊 The results
 
 Here's how our Product Hunt launch went:
-- **#16 Product of the Day** – We proudly secured the bronze medal!
+- **#16 Product of the Day**
 - **114+ upvotes** in the first 24 hours
 - **20+ new user registrations** on launch day
 - **14+ comments and 2 five-star reviews** from the Product Hunt community
