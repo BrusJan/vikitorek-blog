@@ -1,0 +1,220 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<BaseHead title={SITE_TITLE} description="Willkommen beim Blog über vikitorek.com" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<div class="hero-content">
+					<h1>Vikitorek Blog</h1>
+					<p class="tagline">
+						Kinderfreundliche Zusammenfassungen von Wikipedia-Artikeln in einem Absatz, jederzeit griffbereit.
+					</p>
+				</div>
+				<div class="hero-image">
+					<img src="/vikitorek-launch.jpg" alt="Vikitorek App Screenshot" />
+				</div>
+			</section>
+
+			<section>
+			    <h2>Wie funktioniert es?</h2>
+				<img src="/search-example.jpg" alr="Suchbeispiel" />
+				<ol>
+				    <li>Wählen Sie das Alter und die ungefähre Textlänge aus.</li>
+					<li>Geben Sie Ihren Suchbegriff ein (TIPP: Keine Fragen, versuchen Sie, den Wikipedia-Artikel mit Stichworten zu finden)</li>
+					<li>Klicken Sie auf Suchen!</li>
+				</ol>
+			    <p><strong>Vikitorek sucht den Artikel und liefert Ihnen in wenigen Sekunden eine Zusammenfassung.</strong></p>
+			</section>
+			
+			<div class="cta-buttons">
+				<a href="https://vikitorek.com" class="button primary"
+					>Vikitorek ausprobieren</a
+				>
+				<a href="/blog" class="button secondary">Blog lesen (nur auf Englisch)</a>
+			</div>
+
+			<section class="about">
+				<h2>Über Vikitorek</h2>
+				<p>
+					Vikitorek ist eine Web-App, die prägnante, ein-Absatz-Zusammenfassungen von Wikipedia-Artikeln bietet. Wenn Sie schnell Wissen benötigen, ohne Informationsüberflutung, liefert Vikitorek Ihnen in Sekunden das Wesentliche jedes Themas.
+				</p>
+			</section>
+
+			<section class="features">
+				<h2>Was finden Sie in diesem Blog?</h2>
+				<div class="feature-grid">
+					<div class="feature-card">
+						<h3>📰 App-Updates</h3>
+						<p>
+							Bleiben Sie über die neuesten Funktionen, Verbesserungen und Änderungen bei Vikitorek informiert.
+						</p>
+					</div>
+					<div class="feature-card">
+						<h3>🔍 Hinter den Kulissen</h3>
+						<p>
+							Erfahren Sie in technischen Beiträgen, wie Vikitorek entwickelt wurde und wie wir Herausforderungen meistern.
+						</p>
+					</div>
+					<div class="feature-card">
+						<h3>💡 Tipps & Tricks</h3>
+						<p>
+							Erfahren Sie, wie Sie Vikitorek optimal nutzen können – mit Anwendungstipps und Best Practices.
+						</p>
+					</div>
+					<div class="feature-card">
+						<h3>🚀 Zukunftspläne</h3>
+						<p>
+							Erhalten Sie einen Ausblick auf kommende Funktionen und unsere Roadmap für die Zukunft von Vikitorek.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta">
+				<h2>Bereit, Ihre Recherche zu vereinfachen?</h2>
+				<p>Probieren Sie Vikitorek noch heute aus und erleben Sie Wikipedia auf ganz neue Weise.</p>
+				<a href="https://vikitorek.com" class="button primary large"
+					>Jetzt starten</a
+				>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1rem;
+	}
+
+	section {
+		margin: 4rem 0;
+	}
+
+	.hero {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.hero-content {
+		padding-right: 2rem;
+	}
+
+	.tagline {
+		font-size: 1.5rem;
+		margin: 1rem 0 2rem;
+		color: #555;
+	}
+
+	.hero-image img {
+		width: 100%;
+		border-radius: 8px;
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		margin-top: 2rem;
+	}
+
+	.button {
+		display: inline-block;
+		padding: 0.8rem 1.5rem;
+		border-radius: 4px;
+		text-decoration: none;
+		font-weight: bold;
+		transition: all 0.3s ease;
+	}
+
+	.button.primary {
+		background-color: #F7A517;
+		color: white;
+	}
+
+	.button.secondary {
+		background-color: #e5e7eb;
+		color: #1f2937;
+	}
+
+	.button.large {
+		padding: 1rem 2rem;
+		font-size: 1.1rem;
+	}
+
+	.button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	}
+
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.feature-card {
+		background-color: #f9fafb;
+		padding: 1.5rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+		transition: all 0.3s ease;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	}
+
+	.cta {
+		text-align: center;
+		padding: 3rem;
+		background-color: #f3f4f6;
+		border-radius: 12px;
+	}
+
+	h1 {
+		font-size: 3rem;
+		margin: 0;
+		line-height: 1.1;
+	}
+
+	h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	h3 {
+		margin-top: 0;
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			grid-template-columns: 1fr;
+		}
+
+		.hero-content {
+			padding-right: 0;
+			order: 1;
+		}
+
+		.hero-image {
+			order: 0;
+		}
+	}
+</style>

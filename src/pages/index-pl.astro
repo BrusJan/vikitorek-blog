@@ -1,0 +1,220 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="pl">
+	<head>
+		<BaseHead title={SITE_TITLE} description="Witamy na blogu o vikitorek.com" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<div class="hero-content">
+					<h1>Blog Vikitorek</h1>
+					<p class="tagline">
+						Jednoakapitowe, przyjazne dzieciom podsumowania artykułów z Wikipedii, zawsze pod ręką.
+					</p>
+				</div>
+				<div class="hero-image">
+					<img src="/vikitorek-launch.jpg" alt="Zrzut ekranu aplikacji Vikitorek" />
+				</div>
+			</section>
+
+			<section>
+			    <h2>Jak to zrobić?</h2>
+				<img src="/search-example.jpg" alr="Przykład wyszukiwania" />
+				<ol>
+				    <li>Wybierz wiek i przybliżoną długość tekstu.</li>
+					<li>Wpisz frazę wyszukiwania (WSKAZÓWKA: Nie zadawaj pytań, spróbuj znaleźć artykuł z Wikipedii za pomocą słów kluczowych)</li>
+					<li>Kliknij Szukaj!</li>
+				</ol>
+			    <p><strong>Vikitorek wyszuka artykuł i w kilka sekund poda Ci podsumowanie.</strong></p>
+			</section>
+			
+			<div class="cta-buttons">
+				<a href="https://vikitorek.com" class="button primary"
+					>Wypróbuj Vikitorek</a
+				>
+				<a href="/blog" class="button secondary">Czytaj blog (tylko po angielsku)</a>
+			</div>
+
+			<section class="about">
+				<h2>O Vikitorku</h2>
+				<p>
+					Vikitorek to aplikacja internetowa, która dostarcza zwięzłe, jednoakapitowe podsumowania artykułów z Wikipedii. Gdy potrzebujesz szybkiej wiedzy bez nadmiaru informacji, Vikitorek w kilka sekund przekazuje istotę każdego tematu.
+				</p>
+			</section>
+
+			<section class="features">
+				<h2>Co znajdziesz na tym blogu</h2>
+				<div class="feature-grid">
+					<div class="feature-card">
+						<h3>📰 Aktualizacje aplikacji</h3>
+						<p>
+							Bądź na bieżąco z najnowszymi funkcjami, ulepszeniami i zmianami w Vikitorek.
+						</p>
+					</div>
+					<div class="feature-card">
+						<h3>🔍 Za kulisami</h3>
+						<p>
+							Poznaj techniczne wpisy o tym, jak powstał Vikitorek i jak radzimy sobie z wyzwaniami.
+						</p>
+					</div>
+					<div class="feature-card">
+						<h3>💡 Porady i triki</h3>
+						<p>
+							Dowiedz się, jak najlepiej korzystać z Vikitorek dzięki wskazówkom i sprawdzonym praktykom.
+						</p>
+					</div>
+					<div class="feature-card">
+						<h3>🚀 Plany na przyszłość</h3>
+						<p>
+							Poznaj nadchodzące funkcje i naszą mapę drogową na przyszłość Vikitorek.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta">
+				<h2>Gotowy, aby uprościć swoje poszukiwania?</h2>
+				<p>Wypróbuj Vikitorek już dziś i poznaj Wikipedię w zupełnie nowy sposób.</p>
+				<a href="https://vikitorek.com" class="button primary large"
+					>Rozpocznij</a
+				>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1rem;
+	}
+
+	section {
+		margin: 4rem 0;
+	}
+
+	.hero {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.hero-content {
+		padding-right: 2rem;
+	}
+
+	.tagline {
+		font-size: 1.5rem;
+		margin: 1rem 0 2rem;
+		color: #555;
+	}
+
+	.hero-image img {
+		width: 100%;
+		border-radius: 8px;
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		margin-top: 2rem;
+	}
+
+	.button {
+		display: inline-block;
+		padding: 0.8rem 1.5rem;
+		border-radius: 4px;
+		text-decoration: none;
+		font-weight: bold;
+		transition: all 0.3s ease;
+	}
+
+	.button.primary {
+		background-color: #F7A517;
+		color: white;
+	}
+
+	.button.secondary {
+		background-color: #e5e7eb;
+		color: #1f2937;
+	}
+
+	.button.large {
+		padding: 1rem 2rem;
+		font-size: 1.1rem;
+	}
+
+	.button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	}
+
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.feature-card {
+		background-color: #f9fafb;
+		padding: 1.5rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+		transition: all 0.3s ease;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	}
+
+	.cta {
+		text-align: center;
+		padding: 3rem;
+		background-color: #f3f4f6;
+		border-radius: 12px;
+	}
+
+	h1 {
+		font-size: 3rem;
+		margin: 0;
+		line-height: 1.1;
+	}
+
+	h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	h3 {
+		margin-top: 0;
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			grid-template-columns: 1fr;
+		}
+
+		.hero-content {
+			padding-right: 0;
+			order: 1;
+		}
+
+		.hero-image {
+			order: 0;
+		}
+	}
+</style>

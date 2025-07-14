@@ -28,14 +28,14 @@ const posts = (await getCollection('blog')).sort(
 				padding: 0;
 			}
 			ul li {
-				width: calc(50% - 1rem);
+				width: calc(25% - 2rem);
 			}
 			ul li * {
 				text-decoration: none;
 				transition: 0.2s ease;
 			}
 			ul li:first-child {
-				width: 100%;
+				width: calc(48% - 2rem);
 				margin-bottom: 1rem;
 				text-align: center;
 			}
@@ -73,10 +73,11 @@ const posts = (await getCollection('blog')).sort(
 					gap: 0.5em;
 				}
 				ul li {
-					width: 100%;
+					width: calc(48% - 1rem);
 					text-align: center;
 				}
 				ul li:first-child {
+					width: 100%;
 					margin-bottom: 0;
 				}
 				ul li:first-child .title {
@@ -94,7 +95,7 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li>
 								<a href={`/blog/${post.id}/`}>
-									<img  style="max-width:400px" src={post.data.heroImage} alt="" />
+									<img  style="max-width:200px" src={post.data.heroImage} alt="" />
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />

@@ -8,11 +8,23 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={SITE_TITLE} description="Welcome to blog about vikitorek.com" />
 	</head>
 	<body>
 		<Header />
 		<main>
+		    <div class="language-select">
+				<h2 class="center">Select your language</h2>
+					<div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+					    <a href="/index" title="English"><img src="/flags/en.svg" alt="English" style="width:48px; height:34px; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,0.08);" /></a>
+						<a href="/index-cs" title="Čeština"><img src="/flags/cz.svg" alt="Czech" style="width:48px; height:34px; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,0.08);" /></a>
+						<a href="/index-es" title="Español"><img src="/flags/es.svg" alt="Spanish" style="width:48px; height:34px; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,0.08);" /></a>
+						<a href="/index-de" title="Deutsch"><img src="/flags/de.svg" alt="German" style="width:48px; height:34px; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,0.08);" /></a>
+						<a href="/index-fr" title="Français"><img src="/flags/fr.svg" alt="French" style="width:48px; height:34px; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,0.08);" /></a>
+						<a href="/index-it" title="Italiano"><img src="/flags/it.svg" alt="Italian" style="width:48px; height:34px; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,0.08);" /></a>
+						<a href="/index-pl" title="Polski"><img src="/flags/pl.svg" alt="Polish" style="width:48px; height:34px; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,0.08);" /></a>
+					</div>
+				</div>
 			<section class="hero">
 				<div class="hero-content">
 					<h1>Vikitorek Blog</h1>
@@ -25,12 +37,23 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 					<img src="/vikitorek-launch.jpg" alt="Vikitorek App Screenshot" />
 				</div>
 			</section>
+
+			<section>
+			    <h2>How to do it?</h2>
+				<img src="/search-example.jpg" alr="Search example" />
+				<ol>
+				    <li>Select age and approximate text length.</li>
+					<li>Enter your search phrase (TIP: No questions, try to find Wikipedia article by keywords)</li>
+					<li>Click Search!</li>
+				</ol>
+			    <p><strong>Vikitorek will search for article and give you a summary in a few seconds.</strong></p>
+			</section>
 			
 			<div class="cta-buttons">
 				<a href="https://vikitorek.com" class="button primary"
 					>Try Vikitorek</a
 				>
-				<a href="/blog" class="button secondary">Read the Blog</a>
+				<a href="/blog" class="button secondary">Read the Blog (in english only)</a>
 			</div>
 
 			<section class="about">
@@ -120,7 +143,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	.hero-image img {
 		width: 100%;
 		border-radius: 8px;
-		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 5px 34px rgba(0, 0, 0, 0.1);
 	}
 
 	.cta-buttons {
